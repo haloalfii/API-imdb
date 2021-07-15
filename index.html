@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE MOVIE</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+      <div class="container-fluid">
+        <a class="navbar-logo navbar-brand ml-5" href="#">THE MOVIE</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link ml-5 mr-5" href="#main"><b>Movies</b></a>
+            </li>
+            <!-- <li class="dropdown nav-item">
+              <a href="#" class="nav-link ml-5 mr-5"><b>Menu 3</b></a>
+              <ul class="isi-dropdown">
+                <li><a href="#">Adventure</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid" style="margin-top: -200px">
+      <form id="form" class="display-4">
+        <a
+          >Get <b>Recommendation</b> <br />
+          <b>Movies</b> With Us</a
+        ><br />
+        <input type="text" placeholder="Search" id="search" class="search" />
+      </form>
+    </div>
+
+    <div id="tags" class="tags-x"></div>
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content" id="overlay-content"></div>
+
+      <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"
+        >&#8656;</a
+      >
+
+      <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"
+        >&#8658;</a
+      >
+    </div>
+    <main id="main" style="display: flex"></main>
+    <div class="pagination">
+      <div class="page" id="prev">Previous Page</div>
+      <div class="current" id="current">1</div>
+      <div class="page" id="next">Next Page</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
